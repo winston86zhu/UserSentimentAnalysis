@@ -1,6 +1,57 @@
+
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          $('#model').change(function(){
+             var opt = $(this).val();
+              if(opt === 'bayes') {
+                $('#trainer').show();
+                $('#trainer2').hide();
+              } else if (opt === 'svm') {
+                $('#trainer').hide();
+              }
+              else {
+                $('#trainer').hide();
+              }
+              $('#demo').hide();
+          });
+      });
+    </script>
+    <script type=text/javascript>
+        $(function() {
+          $('a#trainer').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/background_process_task',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+        $(function() {
+          $('a#trainer2').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/background_process_task_svm',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+    </script>
+    <script type=text/javascript>
+        $(function() {
+          $('#sub').on('click', function() {
+              $('#trainer').hide();
+              $('#trainer2').hide();
+              $('#demo').show();
+          });
+        });
+    </script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -58,13 +109,22 @@
         justify-content: space-around;
         align-items: center;
       }
+
+      #trainer {
+        display:none;
+      }
+
+      #trainer2 {
+        display:none;
+      }
+
     </style>
   </head>
   <body>
     <div class="container mt-5">
       <div class="centered">
         <div class="text-center text-white">
-          <title>sentiment analysis app</title>
+          <title>CS410 Final - sentiment analysis app</title>
         </div>
         <h1 class="header">Sentiment Analysis App</h1>
 
@@ -75,7 +135,8 @@
 
         <form method="POST" onSubmit="return validate();" class="form">
           <div class="form-div">
-            Subjects: <select name="model" id="model">
+            Subjects:
+            <select name="model" id="model">
               <option value="" selected="selected">Select model</option>
               <option value="bayes">Naive Bayes</option>
               <option value="svm">SVM</option>
@@ -83,13 +144,26 @@
             </select>
             <br><br>
             <input type="text" name="input" class="form-control mr-2" />
-            <button type="submit" class="btn btn-outline-primary" onclick="this.form.submit();">
+            <button id="sub" type="submit" class="btn btn-outline-primary" onclick="this.form.submit();">
               Submit
             </button>
           </div>
         </form>
         <br />
         <br />
+        //button
+        <div class='container'>
+            <h3>Test</h3>
+                <form>
+                    <a href=# id=trainer><button class='btn btn-outline-primary'>Bayes Training</button></a>
+                </form>
+        </div>
+        <div class='container'>
+            <h3>Test</h3>
+                <form>
+                    <a href=# id=trainer2><button class='btn btn-outline-primary'>SVM Training</button></a>
+                </form>
+        </div>
 
         <p id="demo">{{ variable }}</p>
       </div>

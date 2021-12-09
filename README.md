@@ -173,6 +173,7 @@ Then your environment should be able to run `.ipynb`, which can be covered with 
 
 This project is designed and implemented by myself, 
 with around 40 hours of learning, testing and documentations.
+- Author: Winston Zhu (hezhiz2)
 - Data Source: [Kaggle Movie Review](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data)
 
 # Launch the App

@@ -2,6 +2,23 @@
 
 Please fork this repository and paste the github link of your fork on Microsoft CMT. Detailed instructions are on Coursera under Week 1: Course Project Overview/Week 9 Activities.
 
+- [CourseProject](#courseproject)
+- [Overview](#overview)
+  * [Part1: Application](#part1--application)
+  * [Part 2: Model Comparison](#part-2--model-comparison)
+- [Documentation of Software](#documentation-of-software)
+  * [Data Cleaning](#data-cleaning)
+  * [Data Preparation](#data-preparation)
+  * [Bayes](#bayes)
+  * [SVM](#svm)
+  * [Vadar Model](#vadar-model)
+  * [Flask Framework](#flask-framework)
+  * [Model Comparison](#model-comparison)
+- [Documentation of the usage of the software](#documentation-of-the-usage-of-the-software)
+  * [Start the App](#start-the-app)
+- [Contribution](#contribution)
+- [Launch the App](#launch-the-app)
+
 # Overview
 
 This section provides an overview of the application.
@@ -155,8 +172,8 @@ Then your environment should be able to run `.ipynb`, which can be covered with 
 # Contribution
 
 This project is designed and implemented by myself, 
-with around 40 hours of learning, testing and documentations. 
-
+with around 40 hours of learning, testing and documentations.
+- Data Source: [Kaggle Movie Review](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data)
 
 # Launch the App
 Go to http://127.0.0.1:8080/ once you run `main.py`

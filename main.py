@@ -101,7 +101,7 @@ def bayes_model(input_text):
     return get_sentiment_category(result[0], 2)
 
 def svm_model(input_text):
-    svm_model = joblib.load('./model/svm_linear_model.pkl')
+    svm_model = joblib.load('./model/svm_linear_model_2.pkl')
     with open(r"./temp/vec_svm", "rb") as input_file:
         vector = pickle.load(input_file)
 

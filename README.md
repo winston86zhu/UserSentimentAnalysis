@@ -1,3 +1,7 @@
+# Project Deliverables 
+- [Demo Video](https://vimeo.com/655115555/0587378ff3)
+- [Final Documentation](https://github.com/winston86zhu/UserSentimentAnalysis/blob/main/Project%20Documentation.pdf)
+
 # CourseProject
 
 Please fork this repository and paste the github link of your fork on Microsoft CMT. Detailed instructions are on Coursera under Week 1: Course Project Overview/Week 9 Activities.

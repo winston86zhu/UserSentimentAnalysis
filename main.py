@@ -93,7 +93,7 @@ def background_process_task_svm():
 
 def bayes_model(input_text):
     bayes_model = load('./model/bayes_multinomial_model.pkl')
-    with open(r"./temp/vec", "rb") as input_file:
+    with open(r"./temp/vec_bayes", "rb") as input_file:
         vec = pickle.load(input_file)
 
     result = bayes_model.predict(vec.transform([input_text]))

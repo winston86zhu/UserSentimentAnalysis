@@ -1,6 +1,7 @@
 # Project Deliverables 
 - [Demo Video](https://vimeo.com/655115555/0587378ff3)
 - [Final Documentation](https://github.com/winston86zhu/UserSentimentAnalysis/blob/main/Project%20Documentation.pdf)
+- [Final Presentation Slides](https://github.com/winston86zhu/UserSentimentAnalysis/blob/main/cs410Final%20Presentation.pptx)
 
 # CourseProject
 

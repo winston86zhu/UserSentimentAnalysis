@@ -1,0 +1,5 @@
+value, price, money, sale, happy hour
+food, menu, appetizer, entree, delicious
+ill, sick, poisoning, safety, hygiene, vermin, rats
+clean, dirty, sanitary, unsanitary, spotless, grimy
+service, manager, waiter, bartender
